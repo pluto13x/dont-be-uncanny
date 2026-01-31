@@ -10,6 +10,7 @@ script = ExtResource("1_o5qli")
 [node name="top_layer" type="CanvasLayer" parent="." unique_id=1534331156]
 layer = 5
 
-[node name="Socialization" parent="top_layer" unique_id=1684890509 instance=ExtResource("2_0wfyh")]
+[node name="socialization_ui" parent="top_layer" unique_id=1684890509 instance=ExtResource("2_0wfyh")]
+visible = false
 
-[node name="dialogue" parent="." unique_id=872471280 instance=ExtResource("2_sugp2")]
+[node name="dialogic_ui" parent="." unique_id=872471280 instance=ExtResource("2_sugp2")]

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dwho8xddrkqv4"]
 
 [ext_resource type="Texture2D" uid="uid://b0qhj6h4il8i3" path="res://assets/sprites/ui/smileys/smile.png" id="1_2hp7a"]
+[ext_resource type="Script" uid="uid://c28ne2c2u80no" path="res://scenes/uncanny_bar.gd" id="1_2kue4"]
 [ext_resource type="Texture2D" uid="uid://kv74wu4g4se2" path="res://assets/sprites/ui/smileys/sad.png" id="2_chfpi"]
 [ext_resource type="Texture2D" uid="uid://cp0ep5758q2af" path="res://assets/sprites/ui/smileys/angry.png" id="3_2kue4"]
 [ext_resource type="Script" uid="uid://ip11y6hb3nkv" path="res://scenes/face.gd" id="4_chfpi"]
@@ -12,6 +13,9 @@ offset_left = 111.0
 offset_top = 35.0
 offset_right = 410.0
 offset_bottom = 93.0
+value = 50.0
+show_percentage = false
+script = ExtResource("1_2kue4")
 
 [node name="face_buttons" type="PanelContainer" parent="." unique_id=786755604]
 offset_left = 977.0

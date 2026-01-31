@@ -1,2 +1,6 @@
 join cook center
 cook: ja sam kuvar
+- super
+	set {cook_uncanny} += 10.0
+- fuj
+	set {cook_uncanny} -= 20.0

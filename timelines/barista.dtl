@@ -1,2 +1,11 @@
 join barista center
 barista: ja sam barista
+barista: a ti?
+- kuvar
+	barista: uhhhhh ne nisi
+	set {barista_uncanny} += 10.0
+- vanzemaljac
+	barista: ahahaha
+	set {barista_uncanny} -= 10.0
+- pomoćnik kuvara
+	barista: a da jeste
