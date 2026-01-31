@@ -19,23 +19,24 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+Global="*uid://dypuv0u8flip1"
 
 [dialogic]
 
 directories/dch_directory={
-"barista": "res://characters/barista.dch",
-"cashier": "res://characters/cashier.dch",
-"cook": "res://characters/cook.dch",
-"server": "res://characters/server.dch"
+"barista": "res://dialogic stuff/characters/barista.dch",
+"cashier": "res://dialogic stuff/characters/cashier.dch",
+"cook": "res://dialogic stuff/characters/cook.dch",
+"server": "res://dialogic stuff/characters/server.dch"
 }
 directories/dtl_directory={
-"barista": "res://timelines/barista.dtl",
-"cook": "res://timelines/cook.dtl",
-"timeline1": "res://timelines/timeline1.dtl"
+"barista": "res://dialogic stuff/timelines/barista.dtl",
+"cashier": "res://dialogic stuff/timelines/cashier.dtl",
+"cook": "res://dialogic stuff/timelines/cook.dtl",
+"server": "res://dialogic stuff/timelines/server.dtl",
+"timeline1": "res://dialogic stuff/timelines/timeline1.dtl"
 }
-layout/style_directory={
-"visual_novel_style": "res://styles/visual_novel_style.tres"
-}
+layout/style_directory={}
 layout/style_list=["res://styles/visual_novel_style.tres"]
 layout/default_style="res://timelines/visual_novel_style.tres"
 variables={
