@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dwho8xddrkqv4"]
+
+[ext_resource type="Texture2D" uid="uid://b0qhj6h4il8i3" path="res://assets/sprites/ui/smileys/smile.png" id="1_2hp7a"]
+[ext_resource type="Texture2D" uid="uid://kv74wu4g4se2" path="res://assets/sprites/ui/smileys/sad.png" id="2_chfpi"]
+[ext_resource type="Texture2D" uid="uid://cp0ep5758q2af" path="res://assets/sprites/ui/smileys/angry.png" id="3_2kue4"]
+[ext_resource type="Script" uid="uid://ip11y6hb3nkv" path="res://scenes/face.gd" id="4_chfpi"]
+
+[node name="socialization_ui" type="Node2D" unique_id=1684890509]
+
+[node name="uncanny_bar" type="ProgressBar" parent="." unique_id=754642382]
+offset_left = 111.0
+offset_top = 35.0
+offset_right = 410.0
+offset_bottom = 93.0
+
+[node name="face_buttons" type="PanelContainer" parent="." unique_id=786755604]
+offset_left = 977.0
+offset_top = 153.0
+offset_right = 1083.0
+offset_bottom = 473.0
+
+[node name="vertical_box" type="VBoxContainer" parent="face_buttons" unique_id=1498390925]
+layout_mode = 2
+
+[node name="smile" type="Button" parent="face_buttons/vertical_box" unique_id=795829358]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("1_2hp7a")
+expand_icon = true
+
+[node name="frown" type="Button" parent="face_buttons/vertical_box" unique_id=744299707]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("2_chfpi")
+expand_icon = true
+
+[node name="angry" type="Button" parent="face_buttons/vertical_box" unique_id=1278379960]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("3_2kue4")
+expand_icon = true
+
+[node name="face" type="Sprite2D" parent="." unique_id=1582395567]
+position = Vector2(110, 180)
+scale = Vector2(0.21666667, 0.21666667)
+texture = ExtResource("1_2hp7a")
+script = ExtResource("4_chfpi")
+
+[connection signal="pressed" from="face_buttons/vertical_box/smile" to="face" method="_on_smile_pressed"]
+[connection signal="pressed" from="face_buttons/vertical_box/frown" to="face" method="_on_frown_pressed"]
+[connection signal="pressed" from="face_buttons/vertical_box/angry" to="face" method="_on_angry_pressed"]

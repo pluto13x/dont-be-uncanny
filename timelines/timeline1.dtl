@@ -1,0 +1,9 @@
+sa kime želiš da pričaš
+- cook
+	[signal arg="cook"]
+	[signal arg="chosen_character"]
+	jump cook/
+- barista
+	[signal arg="barista"]
+	[signal arg="chosen_character"]
+	jump barista/
