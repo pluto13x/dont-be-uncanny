@@ -4,3 +4,6 @@ cook: ja sam kuvar
 	set {cook_uncanny} += 10.0
 - fuj
 	set {cook_uncanny} -= 20.0
+[clear time="0.3"]
+[signal arg="done"]
+jump timeline1/

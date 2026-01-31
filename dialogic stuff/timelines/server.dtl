@@ -1,1 +1,4 @@
 join server center
+[clear time="0.3"]
+[signal arg="done"]
+jump timeline1/

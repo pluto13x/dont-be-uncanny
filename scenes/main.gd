@@ -1,13 +1,17 @@
 extends Node2D
 
 func _start_interacting(input_signal):
-	if input_signal == "chosen_character":
+	var ui_visible = $top_layer/socialization_ui.visible
+	if ui_visible:
+		$top_layer/socialization_ui.visible = false
+		print("made invisible")
+	else:
 		$top_layer/socialization_ui.visible = true
+		print("made visible")
 		
 
 func _ready() -> void:
 	Dialogic.signal_event.connect(_start_interacting)
 
 func _process(delta: float) -> void:
-	print(Global.chosen_character)
 	pass
