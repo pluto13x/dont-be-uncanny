@@ -9,6 +9,6 @@ barista: a ti?
 	set {barista_uncanny} -= 10.0
 - pomoćnik kuvara
 	barista: a da jeste
-[clear time="0.3"]
 [signal arg="done"]
+[clear time="0.3"]
 jump timeline1/

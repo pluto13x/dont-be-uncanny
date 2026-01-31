@@ -3,8 +3,50 @@
 [ext_resource type="Texture2D" uid="uid://b0qhj6h4il8i3" path="res://assets/sprites/ui/smileys/smile.png" id="1_2hp7a"]
 [ext_resource type="Script" uid="uid://c28ne2c2u80no" path="res://scenes/uncanny_bar.gd" id="1_2kue4"]
 [ext_resource type="Texture2D" uid="uid://kv74wu4g4se2" path="res://assets/sprites/ui/smileys/sad.png" id="2_chfpi"]
+[ext_resource type="Texture2D" uid="uid://cjej5ac6siddq" path="res://assets/sprites/ui/smileys/neutral.png" id="2_owara"]
 [ext_resource type="Texture2D" uid="uid://cp0ep5758q2af" path="res://assets/sprites/ui/smileys/angry.png" id="3_2kue4"]
 [ext_resource type="Script" uid="uid://ip11y6hb3nkv" path="res://scenes/face.gd" id="4_chfpi"]
+[ext_resource type="Texture2D" uid="uid://cinomeyvfecu6" path="res://assets/sprites/ui/smileys/laugh.png" id="6_rrl3q"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_owara"]
+device = -1
+keycode = 81
+unicode = 113
+
+[sub_resource type="Shortcut" id="Shortcut_rrl3q"]
+events = [SubResource("InputEventKey_owara")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_rrl3q"]
+device = -1
+keycode = 87
+unicode = 119
+
+[sub_resource type="Shortcut" id="Shortcut_6v4l0"]
+events = [SubResource("InputEventKey_rrl3q")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_mnxas"]
+device = -1
+keycode = 69
+unicode = 102
+
+[sub_resource type="Shortcut" id="Shortcut_d5nqw"]
+events = [SubResource("InputEventKey_mnxas")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_xt27g"]
+device = -1
+keycode = 82
+unicode = 112
+
+[sub_resource type="Shortcut" id="Shortcut_k2jo7"]
+events = [SubResource("InputEventKey_xt27g")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_cpeka"]
+device = -1
+keycode = 84
+unicode = 103
+
+[sub_resource type="Shortcut" id="Shortcut_scewb"]
+events = [SubResource("InputEventKey_cpeka")]
 
 [node name="socialization_ui" type="Node2D" unique_id=1684890509]
 
@@ -18,30 +60,47 @@ show_percentage = false
 script = ExtResource("1_2kue4")
 
 [node name="face_buttons" type="PanelContainer" parent="." unique_id=786755604]
-offset_left = 977.0
-offset_top = 153.0
-offset_right = 1083.0
-offset_bottom = 473.0
+offset_left = 988.0
+offset_top = 155.0
+offset_right = 1051.0
+offset_bottom = 475.0
 
 [node name="vertical_box" type="VBoxContainer" parent="face_buttons" unique_id=1498390925]
 layout_mode = 2
 
+[node name="neutral" type="Button" parent="face_buttons/vertical_box" unique_id=258611973]
+layout_mode = 2
+size_flags_vertical = 3
+shortcut = SubResource("Shortcut_rrl3q")
+icon = ExtResource("2_owara")
+expand_icon = true
+
 [node name="smile" type="Button" parent="face_buttons/vertical_box" unique_id=795829358]
 layout_mode = 2
 size_flags_vertical = 3
+shortcut = SubResource("Shortcut_6v4l0")
 icon = ExtResource("1_2hp7a")
 expand_icon = true
 
 [node name="frown" type="Button" parent="face_buttons/vertical_box" unique_id=744299707]
 layout_mode = 2
 size_flags_vertical = 3
+shortcut = SubResource("Shortcut_d5nqw")
 icon = ExtResource("2_chfpi")
 expand_icon = true
 
 [node name="angry" type="Button" parent="face_buttons/vertical_box" unique_id=1278379960]
 layout_mode = 2
 size_flags_vertical = 3
+shortcut = SubResource("Shortcut_k2jo7")
 icon = ExtResource("3_2kue4")
+expand_icon = true
+
+[node name="laugh" type="Button" parent="face_buttons/vertical_box" unique_id=1965504124]
+layout_mode = 2
+size_flags_vertical = 3
+shortcut = SubResource("Shortcut_scewb")
+icon = ExtResource("6_rrl3q")
 expand_icon = true
 
 [node name="face" type="Sprite2D" parent="." unique_id=1582395567]
@@ -50,6 +109,8 @@ scale = Vector2(0.21666667, 0.21666667)
 texture = ExtResource("1_2hp7a")
 script = ExtResource("4_chfpi")
 
+[connection signal="pressed" from="face_buttons/vertical_box/neutral" to="face" method="_on_neutral_pressed"]
 [connection signal="pressed" from="face_buttons/vertical_box/smile" to="face" method="_on_smile_pressed"]
 [connection signal="pressed" from="face_buttons/vertical_box/frown" to="face" method="_on_frown_pressed"]
 [connection signal="pressed" from="face_buttons/vertical_box/angry" to="face" method="_on_angry_pressed"]
+[connection signal="pressed" from="face_buttons/vertical_box/laugh" to="face" method="_on_laugh_pressed"]
