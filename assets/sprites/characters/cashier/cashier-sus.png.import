@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbqmflbijsvbm"
-path="res://.godot/imported/Products.png-704b41aca4c50a438544785251f7d015.ctex"
+uid="uid://bynv6k75txrku"
+path="res://.godot/imported/cashier-sus.png-c7781954fb202216a9dd8b5b6b09e2c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/server/Products.png"
-dest_files=["res://.godot/imported/Products.png-704b41aca4c50a438544785251f7d015.ctex"]
+source_file="res://assets/sprites/characters/cashier/cashier-sus.png"
+dest_files=["res://.godot/imported/cashier-sus.png-c7781954fb202216a9dd8b5b6b09e2c4.ctex"]
 
 [params]
 

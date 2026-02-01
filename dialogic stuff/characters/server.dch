@@ -19,7 +19,7 @@
 &"portraits": {
 "neutral": {
 "export_overrides": {
-"image": "\"res://assets/sprites/server/Products.png\""
+"image": "\"res://assets/sprites/characters/server/server-chill.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

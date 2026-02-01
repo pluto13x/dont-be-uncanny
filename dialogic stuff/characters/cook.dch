@@ -19,7 +19,7 @@
 &"portraits": {
 "neutral": {
 "export_overrides": {
-"image": "\"res://assets/sprites/cook/Remy_28Ratatouille_29.png\""
+"image": "\"res://assets/sprites/characters/cook/cook-chill.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

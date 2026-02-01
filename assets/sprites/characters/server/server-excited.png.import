@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di4ji146uuvs4"
-path="res://.godot/imported/230-2302830_roblox-noob.png-9629ab5f4db4a1ce97885ba4be40f825.ctex"
+uid="uid://do344hpdnba3g"
+path="res://.godot/imported/server-excited.png-ab8d3ce56048dd5d01f82c37e82efc59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cashier/230-2302830_roblox-noob.png"
-dest_files=["res://.godot/imported/230-2302830_roblox-noob.png-9629ab5f4db4a1ce97885ba4be40f825.ctex"]
+source_file="res://assets/sprites/characters/server/server-excited.png"
+dest_files=["res://.godot/imported/server-excited.png-ab8d3ce56048dd5d01f82c37e82efc59.ctex"]
 
 [params]
 

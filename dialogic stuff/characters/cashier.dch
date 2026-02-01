@@ -19,7 +19,7 @@
 &"portraits": {
 "neutral": {
 "export_overrides": {
-"image": "\"res://assets/sprites/cashier/230-2302830_roblox-noob.png\""
+"image": "\"res://assets/sprites/characters/cashier/cashier-chill.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

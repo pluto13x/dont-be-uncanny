@@ -19,7 +19,7 @@
 &"portraits": {
 "neutral": {
 "export_overrides": {
-"image": "\"res://assets/sprites/barista/Miku-PNG-Image.png\""
+"image": "\"res://assets/sprites/characters/barista/barista-chill.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

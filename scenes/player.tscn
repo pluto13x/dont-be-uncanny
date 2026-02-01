@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://0a52me6dx0d7"]
+
+[ext_resource type="Texture2D" uid="uid://vmjxsr57yt3l" path="res://assets/sprites/mc/breathe/mc-body-1.png" id="1_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://cbonc8d20j3s3" path="res://assets/sprites/mc/breathe/mc-body-2.png" id="2_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://b76fjtstihhx0" path="res://assets/sprites/mc/breathe/mc-body-3.png" id="3_fjrip"]
+[ext_resource type="Texture2D" uid="uid://bws5ej4tjm1bv" path="res://assets/sprites/mc/faces/mc-face-neutral.png" id="4_smehm"]
+[ext_resource type="Texture2D" uid="uid://co1q4jrtmef61" path="res://assets/sprites/mc/eyes/mc-eyes-open.png" id="5_ur7pv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u8vuu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qlg0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tuyoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fjrip")
+}],
+"loop": true,
+"name": &"breathe in",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_fjrip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tuyoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_qlg0r")
+}],
+"loop": true,
+"name": &"breathe out",
+"speed": 2.0
+}]
+
+[node name="player" type="Node2D" unique_id=1752976612]
+
+[node name="body" type="AnimatedSprite2D" parent="." unique_id=2074247571]
+position = Vector2(3, 0)
+sprite_frames = SubResource("SpriteFrames_u8vuu")
+animation = &"breathe out"
+frame = 1
+frame_progress = 0.19095866
+
+[node name="face" type="Sprite2D" parent="body" unique_id=1866387780]
+texture = ExtResource("4_smehm")
+
+[node name="eyes" type="Sprite2D" parent="body/face" unique_id=80284454]
+texture = ExtResource("5_ur7pv")

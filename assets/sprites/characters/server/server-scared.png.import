@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjgy2hsjv8wbl"
-path="res://.godot/imported/Miku-PNG-Image.png-0709972810b73b521837a61129421845.ctex"
+uid="uid://cn1ulvdocehfi"
+path="res://.godot/imported/server-scared.png-f8f75ddb5badace8f6d8d57c28655390.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/barista/Miku-PNG-Image.png"
-dest_files=["res://.godot/imported/Miku-PNG-Image.png-0709972810b73b521837a61129421845.ctex"]
+source_file="res://assets/sprites/characters/server/server-scared.png"
+dest_files=["res://.godot/imported/server-scared.png-f8f75ddb5badace8f6d8d57c28655390.ctex"]
 
 [params]
 

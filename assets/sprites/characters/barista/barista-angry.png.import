@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bchenuv01okqc"
-path="res://.godot/imported/Remy_28Ratatouille_29.png-0e70cc0081cbdce31efc0f9de1488e1e.ctex"
+uid="uid://bqtwttg6tmkuk"
+path="res://.godot/imported/barista-angry.png-f3dc27abfcf36fc16a33923412a61d40.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cook/Remy_28Ratatouille_29.png"
-dest_files=["res://.godot/imported/Remy_28Ratatouille_29.png-0e70cc0081cbdce31efc0f9de1488e1e.ctex"]
+source_file="res://assets/sprites/characters/barista/barista-angry.png"
+dest_files=["res://.godot/imported/barista-angry.png-f3dc27abfcf36fc16a33923412a61d40.ctex"]
 
 [params]
 
