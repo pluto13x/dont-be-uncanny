@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://kv74wu4g4se2" path="res://assets/sprites/ui/smileys/sad.png" id="2_chfpi"]
 [ext_resource type="Texture2D" uid="uid://cjej5ac6siddq" path="res://assets/sprites/ui/smileys/neutral.png" id="2_owara"]
 [ext_resource type="Texture2D" uid="uid://cp0ep5758q2af" path="res://assets/sprites/ui/smileys/angry.png" id="3_2kue4"]
-[ext_resource type="Script" uid="uid://ip11y6hb3nkv" path="res://scenes/face.gd" id="4_chfpi"]
 [ext_resource type="Texture2D" uid="uid://cinomeyvfecu6" path="res://assets/sprites/ui/smileys/laugh.png" id="6_rrl3q"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_owara"]
@@ -52,7 +51,7 @@ events = [SubResource("InputEventKey_cpeka")]
 [node name="socialization_ui" type="Node2D" unique_id=1684890509]
 
 [node name="player" parent="." unique_id=1752976612 instance=ExtResource("1_rrl3q")]
-position = Vector2(149.00002, 264.00003)
+position = Vector2(165.00002, 263)
 scale = Vector2(0.4971888, 0.4971888)
 
 [node name="uncanny_bar" type="ProgressBar" parent="." unique_id=754642382]
@@ -108,14 +107,8 @@ shortcut = SubResource("Shortcut_scewb")
 icon = ExtResource("6_rrl3q")
 expand_icon = true
 
-[node name="face" type="Sprite2D" parent="." unique_id=1582395567]
-position = Vector2(415, 215)
-scale = Vector2(0.21666667, 0.21666667)
-texture = ExtResource("1_2hp7a")
-script = ExtResource("4_chfpi")
-
-[connection signal="pressed" from="face_buttons/vertical_box/neutral" to="face" method="_on_neutral_pressed"]
-[connection signal="pressed" from="face_buttons/vertical_box/smile" to="face" method="_on_smile_pressed"]
-[connection signal="pressed" from="face_buttons/vertical_box/frown" to="face" method="_on_frown_pressed"]
-[connection signal="pressed" from="face_buttons/vertical_box/angry" to="face" method="_on_angry_pressed"]
-[connection signal="pressed" from="face_buttons/vertical_box/laugh" to="face" method="_on_laugh_pressed"]
+[connection signal="pressed" from="face_buttons/vertical_box/neutral" to="player" method="_on_neutral_pressed"]
+[connection signal="pressed" from="face_buttons/vertical_box/smile" to="player" method="_on_smile_pressed"]
+[connection signal="pressed" from="face_buttons/vertical_box/frown" to="player" method="_on_frown_pressed"]
+[connection signal="pressed" from="face_buttons/vertical_box/angry" to="player" method="_on_angry_pressed"]
+[connection signal="pressed" from="face_buttons/vertical_box/laugh" to="player" method="_on_laugh_pressed"]
