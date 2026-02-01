@@ -19,7 +19,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_fjrip")
 }],
-"loop": true,
+"loop": false,
 "name": &"breathe in",
 "speed": 2.0
 }, {
@@ -33,7 +33,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("1_qlg0r")
 }],
-"loop": true,
+"loop": false,
 "name": &"breathe out",
 "speed": 2.0
 }]
@@ -44,9 +44,7 @@ script = ExtResource("1_tuyoq")
 [node name="body" type="AnimatedSprite2D" parent="." unique_id=2074247571]
 position = Vector2(3, 0)
 sprite_frames = SubResource("SpriteFrames_u8vuu")
-animation = &"breathe out"
-frame = 1
-frame_progress = 0.19095866
+animation = &"breathe in"
 
 [node name="face" type="Sprite2D" parent="body" unique_id=1866387780]
 texture = ExtResource("4_smehm")
