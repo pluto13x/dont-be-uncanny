@@ -55,10 +55,10 @@ position = Vector2(165.00002, 263)
 scale = Vector2(0.4971888, 0.4971888)
 
 [node name="uncanny_bar" type="ProgressBar" parent="." unique_id=754642382]
-offset_left = 111.0
-offset_top = 35.0
-offset_right = 410.0
-offset_bottom = 93.0
+offset_left = 212.0
+offset_top = 41.0
+offset_right = 403.0
+offset_bottom = 75.0
 value = 50.0
 show_percentage = false
 script = ExtResource("1_2kue4")

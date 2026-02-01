@@ -8,8 +8,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
+	if Input.is_action_just_pressed("blink"):
+		$body/face/eyes.texture = load("res://assets/sprites/mc/eyes/mc-eyes-closed.png")
+	if Input.is_action_just_released("blink"):
+		$body/face/eyes.texture = load("res://assets/sprites/mc/eyes/mc-eyes-open.png")
 
 func _on_neutral_pressed() -> void:
 	$body/face.texture = load("res://assets/sprites/mc/faces/mc-face-neutral.png")
