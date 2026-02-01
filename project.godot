@@ -32,6 +32,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "barista": "res://dialogic stuff/timelines/barista.dtl",
 "cashier": "res://dialogic stuff/timelines/cashier.dtl",
+"chosewho": "res://dialogic stuff/timelines/chosewho.dtl",
 "cook": "res://dialogic stuff/timelines/cook.dtl",
 "server": "res://dialogic stuff/timelines/server.dtl",
 "timeline1": "res://dialogic stuff/timelines/timeline1.dtl"

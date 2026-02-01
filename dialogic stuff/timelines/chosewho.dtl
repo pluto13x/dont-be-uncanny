@@ -1,0 +1,17 @@
+Who do you want to talk to?
+- cook
+	set {Global.chosen_character} = "cook"
+	[signal arg="chosen_character"]
+	jump cook/
+- barista
+	set {Global.chosen_character} = "barista"
+	[signal arg="chosen_character"]
+	jump barista/
+- cashier
+	set {Global.chosen_character} = "cashier"
+	[signal arg="chosen_character"]
+	jump cashier/
+- server
+	set {Global.chosen_character} = "server"
+	[signal arg="chosen_character"]
+	jump server/

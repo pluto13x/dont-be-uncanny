@@ -1,17 +1,7 @@
-sa kime želiš da pričaš
-- cook
-	set {Global.chosen_character} = "cook"
-	[signal arg="chosen_character"]
-	jump cook/
-- barista
-	set {Global.chosen_character} = "barista"
-	[signal arg="chosen_character"]
-	jump barista/
-- cashier
-	set {Global.chosen_character} = "cashier"
-	[signal arg="chosen_character"]
-	jump cashier/
-- server
-	set {Global.chosen_character} = "server"
-	[signal arg="chosen_character"]
-	jump server/
+[background arg="res://assets/sprites/restoran.jpg" fade="0.0"]
+audio music "res://assets/sounds/cafe_music.mp3" [loop="true"]
+Life's been hard lately
+Ever since your alien crew forgot you on Earth, you've been trying your best to fit in with humans
+Even though you've been here for a few years now, you still haven't figured this "socialization" thing out
+There are just so many nonsensical rules that no one has written a manual for...
+jump chosewho/

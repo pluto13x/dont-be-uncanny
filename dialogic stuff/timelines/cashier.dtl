@@ -1,4 +1,15 @@
 join cashier center
+cashier: And you are?
+- Your new coworker!
+- ...And you?
+cashier: Someone who shouldn't be here
+cashier: 4 years of med school and I'm still surrounded by minimum wage workers
+cashier: And which school do you go to?
+- Well... none
+- Uh... computer science
+- But I'm not a child?
+cashier: Yeah good luck crawling your way out of here then...
+cashier: Sorry I got... smarter things to do
 [signal arg="done"]
-[clear time="0.3"]
-jump timeline1/
+[clear time="0.5" music="false" background="false"]
+jump chosewho/

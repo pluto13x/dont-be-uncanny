@@ -1,4 +1,15 @@
 join server center
+server: A new bombshell has entered the villa
+server: What's poppin gurl?
+- Washing dishes... ugh...
+- Huh?
+- Diva I'm so tired from work I literally can't
+server (angry): Oh diva I totally get it I'm literally DONE
+- I guess It's hard to serve every day
+- I think washing dishes is harder though
+- Then go home?
+server (excited): PERIODDD
+server (neutral): I gotta go SERVE diva, be right back
 [signal arg="done"]
-[clear time="0.3"]
-jump timeline1/
+[clear time="0.5" music="false" background="false"]
+jump chosewho/

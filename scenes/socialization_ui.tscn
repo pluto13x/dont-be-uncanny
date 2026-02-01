@@ -8,6 +8,16 @@
 [ext_resource type="Texture2D" uid="uid://cp0ep5758q2af" path="res://assets/sprites/ui/smileys/angry.png" id="3_2kue4"]
 [ext_resource type="Texture2D" uid="uid://cinomeyvfecu6" path="res://assets/sprites/ui/smileys/laugh.png" id="6_rrl3q"]
 
+[sub_resource type="Theme" id="Theme_owara"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrl3q"]
+bg_color = Color(1, 1, 1, 0.5372549)
+border_width_left = 5
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6v4l0"]
+bg_color = Color(0.3889986, 0.57673, 0.30934897, 1)
+
 [sub_resource type="InputEventKey" id="InputEventKey_owara"]
 device = -1
 keycode = 81
@@ -56,9 +66,12 @@ scale = Vector2(0.4971888, 0.4971888)
 
 [node name="uncanny_bar" type="ProgressBar" parent="." unique_id=754642382]
 offset_left = 212.0
-offset_top = 41.0
-offset_right = 403.0
-offset_bottom = 75.0
+offset_top = 44.0
+offset_right = 405.0
+offset_bottom = 83.0
+theme = SubResource("Theme_owara")
+theme_override_styles/background = SubResource("StyleBoxFlat_rrl3q")
+theme_override_styles/fill = SubResource("StyleBoxFlat_6v4l0")
 value = 50.0
 show_percentage = false
 script = ExtResource("1_2kue4")

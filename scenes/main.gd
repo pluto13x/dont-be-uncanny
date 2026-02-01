@@ -4,10 +4,8 @@ func _start_interacting(input_signal):
 	var ui_visible = $top_layer/socialization_ui.visible
 	if ui_visible:
 		$top_layer/socialization_ui.visible = false
-		print("made invisible")
 	else:
 		$top_layer/socialization_ui.visible = true
-		print("made visible")
 		
 
 func _ready() -> void:

@@ -1,9 +1,10 @@
 join cook center
-cook: ja sam kuvar
-- super
+cook: Hold on kiddo, I'll talk to you when I'm done with this
+- Okay
 	set {cook_uncanny} += 10.0
-- fuj
+- Smells disgusting
 	set {cook_uncanny} -= 20.0
+cook: This youth... So disrespectful...
 [signal arg="done"]
-[clear time="0.3"]
-jump timeline1/
+[clear time="0.5" music="false" background="false"]
+jump chosewho/
