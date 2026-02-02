@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://gf4o6nxcbalb" path="res://scenes/dialogue.tscn" id="2_sugp2"]
 
 [node name="main" type="Node2D" unique_id=2058353789]
-position = Vector2(12, 205)
 script = ExtResource("1_o5qli")
 
 [node name="top_layer" type="CanvasLayer" parent="." unique_id=1534331156]
