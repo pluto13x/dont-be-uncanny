@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cbonc8d20j3s3" path="res://assets/sprites/mc/breathe/mc-body-2.png" id="2_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://b76fjtstihhx0" path="res://assets/sprites/mc/breathe/mc-body-3.png" id="3_fjrip"]
 [ext_resource type="Texture2D" uid="uid://bws5ej4tjm1bv" path="res://assets/sprites/mc/faces/mc-face-neutral.png" id="4_smehm"]
+[ext_resource type="Script" uid="uid://rpvg1oej48c2" path="res://scenes/body.gd" id="5_smehm"]
 [ext_resource type="Texture2D" uid="uid://co1q4jrtmef61" path="res://assets/sprites/mc/eyes/mc-eyes-open.png" id="5_ur7pv"]
 [ext_resource type="Script" uid="uid://bk0hqcq7yfq6k" path="res://scenes/eyes.gd" id="7_fjrip"]
 
@@ -46,6 +47,7 @@ script = ExtResource("1_tuyoq")
 position = Vector2(3, 0)
 sprite_frames = SubResource("SpriteFrames_u8vuu")
 animation = &"breathe in"
+script = ExtResource("5_smehm")
 
 [node name="face" type="Sprite2D" parent="body" unique_id=1866387780]
 texture = ExtResource("4_smehm")
@@ -53,3 +55,5 @@ texture = ExtResource("4_smehm")
 [node name="eyes" type="Sprite2D" parent="body/face" unique_id=80284454]
 texture = ExtResource("5_ur7pv")
 script = ExtResource("7_fjrip")
+
+[connection signal="animation_finished" from="body" to="body" method="_on_animation_finished"]
