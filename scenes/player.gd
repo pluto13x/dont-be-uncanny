@@ -13,12 +13,6 @@ func _process(_delta: float) -> void:
 	if Input.is_action_just_released("blink"):
 		$body/face/eyes.texture = load("res://assets/sprites/mc/eyes/mc-eyes-open.png")
 		
-	if Input.is_action_just_pressed("breathe_in") and $body.animation != "breathe in":
-		$body.animation = "breathe in"
-		$body.play()
-	if Input.is_action_just_pressed("breathe_out") and $body.animation != "breathe out":
-		$body.animation = "breathe out"
-		$body.play()
 
 func _on_neutral_pressed() -> void:
 	$body/face.texture = load("res://assets/sprites/mc/faces/mc-face-neutral.png")
