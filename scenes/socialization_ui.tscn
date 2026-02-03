@@ -58,6 +58,10 @@ unicode = 103
 [sub_resource type="Shortcut" id="Shortcut_scewb"]
 events = [SubResource("InputEventKey_cpeka")]
 
+[sub_resource type="LabelSettings" id="LabelSettings_owara"]
+font_size = 29
+font_color = Color(0, 0, 0, 1)
+
 [node name="socialization_ui" type="Node2D" unique_id=1684890509]
 
 [node name="player" parent="." unique_id=1752976612 instance=ExtResource("1_rrl3q")]
@@ -65,10 +69,10 @@ position = Vector2(165.00002, 263)
 scale = Vector2(0.4971888, 0.4971888)
 
 [node name="uncanny_bar" type="ProgressBar" parent="." unique_id=754642382]
-offset_left = 212.0
-offset_top = 44.0
-offset_right = 405.0
-offset_bottom = 83.0
+offset_left = 213.0
+offset_top = 60.0
+offset_right = 406.0
+offset_bottom = 99.0
 theme = SubResource("Theme_owara")
 theme_override_styles/background = SubResource("StyleBoxFlat_rrl3q")
 theme_override_styles/fill = SubResource("StyleBoxFlat_6v4l0")
@@ -119,6 +123,73 @@ size_flags_vertical = 3
 shortcut = SubResource("Shortcut_scewb")
 icon = ExtResource("6_rrl3q")
 expand_icon = true
+
+[node name="q" type="Label" parent="." unique_id=524062545]
+offset_left = 1060.0
+offset_top = 160.0
+offset_right = 1088.0
+offset_bottom = 210.0
+text = "Q"
+label_settings = SubResource("LabelSettings_owara")
+
+[node name="w" type="Label" parent="." unique_id=14540559]
+offset_left = 1060.0
+offset_top = 225.0
+offset_right = 1088.0
+offset_bottom = 275.0
+text = "W"
+label_settings = SubResource("LabelSettings_owara")
+
+[node name="e" type="Label" parent="." unique_id=1885715488]
+offset_left = 1062.0
+offset_top = 292.0
+offset_right = 1096.0
+offset_bottom = 342.0
+text = "E"
+label_settings = SubResource("LabelSettings_owara")
+
+[node name="r" type="Label" parent="." unique_id=984306616]
+offset_left = 1062.0
+offset_top = 355.0
+offset_right = 1096.0
+offset_bottom = 405.0
+text = "R"
+label_settings = SubResource("LabelSettings_owara")
+
+[node name="t" type="Label" parent="." unique_id=890508091]
+offset_left = 1062.0
+offset_top = 422.0
+offset_right = 1096.0
+offset_bottom = 472.0
+text = "T"
+label_settings = SubResource("LabelSettings_owara")
+
+[node name="uio" type="Label" parent="." unique_id=464242594]
+offset_left = 45.0
+offset_top = 431.0
+offset_right = 79.0
+offset_bottom = 481.0
+text = "U - blink
+I - breathe in
+O - breathe out"
+label_settings = SubResource("LabelSettings_owara")
+
+[node name="1234" type="Label" parent="." unique_id=2002556101]
+offset_left = 751.0
+offset_top = 26.0
+offset_right = 1090.0
+offset_bottom = 152.0
+text = "choose dialogue options
+on 1 2 3 4"
+label_settings = SubResource("LabelSettings_owara")
+
+[node name="uio2" type="Label" parent="." unique_id=1742065887]
+offset_left = 183.0
+offset_top = 16.0
+offset_right = 434.0
+offset_bottom = 142.0
+text = "uncaniness meter"
+label_settings = SubResource("LabelSettings_owara")
 
 [connection signal="pressed" from="face_buttons/vertical_box/neutral" to="player" method="_on_neutral_pressed"]
 [connection signal="pressed" from="face_buttons/vertical_box/smile" to="player" method="_on_smile_pressed"]
